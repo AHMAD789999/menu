@@ -1,0 +1,61 @@
+{
+  "agency_info": {
+    "name": "Growvix Digital",
+    "whatsapp_number": "923706756388",
+    "lead_flow": "collect_info_then_redirect"
+  },
+  "services": [
+    {
+      "name": "SEO Optimization",
+      "description": "Rank your website on the first page of Google.",
+      "url": "/services/seo",
+      "priority": 1.0
+    },
+    {
+      "name": "Web Development",
+      "description": "High-performance custom websites and e-commerce stores.",
+      "url": "/services/web-development",
+      "priority": 0.9
+    },
+    {
+      "name": "Graphic Design",
+      "description": "Premium branding, logos, and social media designs.",
+      "url": "/services/graphic-design",
+      "priority": 0.9
+    },
+    {
+      "name": "Social Media Marketing",
+      "description": "Scaling brands through Meta and Google Ads.",
+      "url": "/services/smm",
+      "priority": 0.8
+    }
+  ],
+  "lead_capture_fields": [
+    {
+      "field": "full_name",
+      "question": "Could you please tell me your full name?"
+    },
+    {
+      "field": "email",
+      "question": "What is your professional email address?"
+    },
+    {
+      "field": "whatsapp",
+      "question": "Your WhatsApp number (with country code)?"
+    },
+    {
+      "field": "service_interest",
+      "question": "Which service are you interested in? (SEO, Web, Design, etc.)"
+    },
+    {
+      "field": "budget",
+      "question": "What is your estimated budget for this project?"
+    }
+  ],
+  "actions": {
+    "submit": {
+      "type": "whatsapp_redirect",
+      "message_template": "Hi Growvix, I'm interested in working with you! \n\n*Lead Details:* \n- Name: {name} \n- Email: {email} \n- WhatsApp: {whatsapp} \n- Service: {service} \n- Budget: {budget} \n\nPlease let me know the next steps."
+    }
+  }
+}
