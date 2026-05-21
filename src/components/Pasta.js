@@ -26,7 +26,7 @@ const menuData = [
     desc: "Pasta, black olives, green pepper, mushroom, broccoli, zucchini, mozzarella cheese, your choice of fresh source (white, red, mix)",
     price: "2.200",
     image:
-      "veg pasta.jpeg",
+      "Vegetable Pasta.jpg",
   },
   {
     id: "04",
