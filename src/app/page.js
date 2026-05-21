@@ -34,7 +34,7 @@ const categories = [
   {
     id: "rice",
     name: "Rice",
-    image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=500&q=80",
+    image: "rice.jpg",
   },
   {
     id: "sandwich",
