@@ -14,8 +14,7 @@ import Drinks from "@/components/Drinks";
 
 const BRAND = "#80A852";
 
-const MAP_LINK =
-  "https://www.google.com/maps/dir//Karim+Block+Market,+Karim+Block+Allama+Iqbal+Town,+Lahore,+54000,+Pakistan/@31.5037433,74.2783321,17z/data=!4m17!1m7!3m6!1s0x391903a47c983979:0x6f008b53487f811d!2sKarim+Block+Market!8m2!3d31.5037388!4d74.280907!16s%2Fg%2F11gd27w9nt!4m8!1m0!1m5!1m1!1s0x391903a47c983979:0x6f008b53487f811d!2m2!1d74.280907!2d31.5037388!3e2?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D";
+const MAP_LINK = "https://www.google.com/maps/place/26%C2%B008'25.5%22N+50%C2%B029'33.2%22E/@26.1404364,50.4898783,16.94z/data=!4m4!3m3!8m2!3d26.1404154!4d50.4925658?hl=en&entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D";
 
 const categories = [
   {
@@ -81,7 +80,6 @@ export default function FreshSourceLanding() {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -104,7 +102,6 @@ export default function FreshSourceLanding() {
 
       {/* HEADER */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-2xl border-b border-gray-100 shadow-sm">
-
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6 py-4">
 
           {/* LOGO */}
@@ -118,19 +115,17 @@ export default function FreshSourceLanding() {
               alt="Fresh Source"
               className="h-12 w-12 object-contain"
             />
-
             <div>
               <h1 className="font-black text-gray-900 uppercase tracking-wider text-lg">
                 Fresh Source
               </h1>
-
               <p className="text-xs text-gray-500 uppercase tracking-[3px]">
                 Restaurant
               </p>
             </div>
           </motion.div>
 
-          {/* LOCATION */}
+          {/* LOCATION HEADER ASSIGNMENT */}
           <motion.a
             href={MAP_LINK}
             target="_blank"
@@ -139,7 +134,7 @@ export default function FreshSourceLanding() {
             className="hidden md:flex items-center gap-2 text-sm font-bold hover:opacity-80 transition"
             style={{ color: BRAND }}
           >
-            📍 Karim Block Market, Lahore
+            📍 Souq Waqif, Hamad Town
           </motion.a>
 
         </div>
@@ -148,12 +143,11 @@ export default function FreshSourceLanding() {
       {/* HERO SECTION */}
       <section className="relative min-h-[100dvh] flex items-center justify-center">
 
-        {/* BACKGROUND */}
+        {/* BACKGROUND ACCORDING TO SPECIFIED ID */}
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80')",
+            backgroundImage: "url('/66791c26-a1df-4bee-ac44-060f398cd332.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -164,7 +158,6 @@ export default function FreshSourceLanding() {
         {/* CONTENT */}
         <div className="relative z-10 max-w-6xl px-4 text-center">
 
-          {/* LOGO */}
           <motion.img
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -174,7 +167,6 @@ export default function FreshSourceLanding() {
             className="h-24 md:h-32 mx-auto mb-8"
           />
 
-          {/* TITLE */}
           <motion.h1
             initial={{ opacity: 0, y: 70 }}
             animate={{ opacity: 1, y: 0 }}
@@ -185,13 +177,10 @@ export default function FreshSourceLanding() {
             <span style={{ color: BRAND }}>
               Source
             </span>
-
             <br />
-
             Restaurant
           </motion.h1>
 
-          {/* SLOGAN */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -201,7 +190,6 @@ export default function FreshSourceLanding() {
             Source Fresh Serve Delicious
           </motion.p>
 
-          {/* INTRO */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -213,6 +201,16 @@ export default function FreshSourceLanding() {
             chef crafted salads tossed with house-made dressings, thin crust
             pizzas topped with seasonal veggies and pastas made with nutrient
             rich ingredients.
+          </motion.p>
+
+          {/* INTRO TIMINGS AND SPECS DISPLAY IN HERO BOX */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
+            className="mt-3 text-sm md:text-lg font-medium text-white/90"
+          >
+            🕒 Timing: 11:00 AM to 2:00 AM
           </motion.p>
 
           {/* BUTTONS */}
@@ -231,11 +229,10 @@ export default function FreshSourceLanding() {
             </button>
 
             <a
-              href={MAP_LINK}
-              target="_blank"
+              href={`tel:32309699`}
               className="px-8 py-4 rounded-full border border-white text-white font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300"
             >
-              Find & Contact Us
+              📞 Call: 32309699
             </a>
           </motion.div>
 
@@ -244,7 +241,6 @@ export default function FreshSourceLanding() {
 
       {/* CATEGORIES */}
       <section className="py-20 md:py-28 px-4 bg-gradient-to-b from-white to-gray-50">
-
         <div className="max-w-7xl mx-auto">
 
           <motion.div
@@ -259,7 +255,6 @@ export default function FreshSourceLanding() {
             >
               Explore Categories
             </p>
-
             <h2 className="text-4xl md:text-6xl font-black text-gray-900 uppercase">
               What Would You
               <span style={{ color: BRAND }}> Like?</span>
@@ -267,7 +262,6 @@ export default function FreshSourceLanding() {
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-
             {categories.map((item, index) => (
               <motion.div
                 key={item.id}
@@ -280,7 +274,6 @@ export default function FreshSourceLanding() {
                 className="group cursor-pointer"
               >
                 <div className="relative overflow-hidden rounded-[35px] bg-white shadow-lg hover:shadow-2xl transition-all duration-500 p-5">
-
                   <div
                     className="w-full aspect-square rounded-full overflow-hidden border-4 mx-auto"
                     style={{ borderColor: BRAND }}
@@ -291,26 +284,20 @@ export default function FreshSourceLanding() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                   </div>
-
                   <div className="text-center mt-5">
-
                     <h3
                       className="font-black uppercase text-lg md:text-xl"
                       style={{ color: BRAND }}
                     >
                       {item.name}
                     </h3>
-
                     <p className="text-sm text-gray-500 mt-2">
                       Fresh & delicious meals
                     </p>
-
                   </div>
-
                 </div>
               </motion.div>
             ))}
-
           </div>
 
         </div>
@@ -318,40 +305,17 @@ export default function FreshSourceLanding() {
 
       {/* MENU COMPONENTS */}
       <section className="space-y-16 pb-10">
-
-        <div ref={sectionRefs.salads}>
-          <Salads />
-        </div>
-
-        <div ref={sectionRefs.pizza}>
-          <Pizza />
-        </div>
-
-        <div ref={sectionRefs.pasta}>
-          <Pasta />
-        </div>
-
-        <div ref={sectionRefs.rice}>
-          <Rice />
-        </div>
-
-        <div ref={sectionRefs.sandwich}>
-          <Sandwich />
-        </div>
-
-        <div ref={sectionRefs.wraps}>
-          <Wraps />
-        </div>
-
-        <div ref={sectionRefs.drinks}>
-          <Drinks />
-        </div>
-
+        <div ref={sectionRefs.salads}><Salads /></div>
+        <div ref={sectionRefs.pizza}><Pizza /></div>
+        <div ref={sectionRefs.pasta}><Pasta /></div>
+        <div ref={sectionRefs.rice}><Rice /></div>
+        <div ref={sectionRefs.sandwich}><Sandwich /></div>
+        <div ref={sectionRefs.wraps}><Wraps /></div>
+        <div ref={sectionRefs.drinks}><Drinks /></div>
       </section>
 
       {/* FOOTER */}
       <footer className="relative overflow-hidden bg-[#80A852] py-20 px-4">
-
         <div className="relative z-10 max-w-6xl mx-auto text-center text-white">
 
           <motion.h2
@@ -367,46 +331,39 @@ export default function FreshSourceLanding() {
             Fresh Source Restaurant
           </p>
 
-          {/* CONTACT DETAILS */}
+          {/* CONTACT DETAILS UPDATED */}
           <div className="mt-8 space-y-4 text-white/90">
-
             <a
               href={MAP_LINK}
               target="_blank"
               className="block hover:underline"
             >
-              📍 Karim Block Market, Allama Iqbal Town, Lahore
+              📍 Souq Waqif, Hamad Town
             </a>
 
             <a
-              href="tel:+96500000000"
+              href={`tel:32309699`}
               className="block hover:underline"
             >
-              📞 +965 0000 0000
+              📞 32309699
             </a>
 
-            <a
-              href="mailto:freshsource@email.com"
-              className="block hover:underline"
-            >
-              ✉️ freshsource@email.com
-            </a>
-
+            <div className="block text-white/80">
+              🕒 Open Daily: 11:00 AM to 2:00 AM
+            </div>
           </div>
 
-          {/* LIVE GOOGLE MAP */}
+          {/* LIVE GOOGLE MAP FRAME LINK */}
           <div className="mt-12 rounded-3xl overflow-hidden shadow-2xl border border-white/20">
-
             <iframe
-              src="https://www.google.com/maps?q=Karim+Block+Market+Lahore&output=embed"
+              src={MAP_LINK}
               width="100%"
               height="350"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="w-full"
+              className="w-full border-none"
             ></iframe>
-
           </div>
 
           {/* COPYRIGHT */}
@@ -415,12 +372,10 @@ export default function FreshSourceLanding() {
           </div>
 
         </div>
-
       </footer>
 
       {/* SCROLL TOP BUTTON */}
       <AnimatePresence>
-
         {showTopButton && (
           <motion.button
             initial={{ opacity: 0, scale: 0.7 }}
@@ -433,7 +388,6 @@ export default function FreshSourceLanding() {
             ↑
           </motion.button>
         )}
-
       </AnimatePresence>
 
     </div>
