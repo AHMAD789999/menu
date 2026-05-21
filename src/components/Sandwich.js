@@ -11,7 +11,7 @@ const menuData = [
     desc: "chicken Pari Pari, cabbage, Onion, cheddar cheese with special sauce",
     regular: "1.200",
     whole: "2.000",
-    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=500&q=80",
+    image: "Spicy chicken sandwich.jpg",
   },
   {
     id: "02",
