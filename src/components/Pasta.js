@@ -50,7 +50,7 @@ const menuData = [
     desc: "Spaghetti, chicken teriyaki, fresh vegetables served with special sauce",
     price: "2.200",
     image:
-      "https://images.unsplash.com/photo-1612240498936-65f5101365d2?auto=format&fit=crop&w=500&q=80",
+      "Teriyaki Chicken noodles.jpg",
   },
   {
     id: "07",
