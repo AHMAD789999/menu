@@ -66,7 +66,7 @@ const menuData = [
     regular: "2.200",
     large: "3.000",
     image:
-      "https://avatars.mds.yandex.net/i?id=bff7989db6d2d2ec8e24084048d7f16140476936-4439117-images-thumbs&n=13",
+      "Quinua Avacado salad.jpg",
   },
 ];
 
