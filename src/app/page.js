@@ -337,18 +337,7 @@ export default function FreshSourceLanding() {
             </div>
           </div>
 
-          {/* MAP CONTAINER EXTRA ACCENT */}
-          <div className="mt-8 max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-xl border border-white/10">
-            <iframe
-              src={MAP_LINK}
-              width="100%"
-              height="280"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full border-none opacity-90"
-            ></iframe>
-          </div>
+       
 
           <div className="mt-8 border-t border-white/10 pt-5 text-[11px] text-white/60 tracking-wider">
             © 2026 Fresh Source Restaurant. All rights reserved.
