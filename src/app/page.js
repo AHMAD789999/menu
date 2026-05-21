@@ -19,7 +19,7 @@ const categories = [
   {
     id: "salads",
     name: "Salads",
-    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400&q=80",
+    image: "Salad Main Picture.jpg",
   },
   {
     id: "pizza",
