@@ -46,11 +46,11 @@ const menuData = [
   },
   {
     id: "06",
-    name: "Teriyaki chicken w/Rice",
+    name: "Teriyaki chicken with mash potato",
     category: "Rice",
     desc: "Teriyaki chicken, herb rice, fresh vegetables sesame seeds serve with special sauce",
     price: "2.500",
-    image: "https://www.mashed.com/img/gallery/classic-teriyaki-chicken-recipe/l-intro-1651603430.jpg",
+    image: "1.jpeg",
   },
 ];
 
