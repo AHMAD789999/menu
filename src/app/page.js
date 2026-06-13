@@ -39,7 +39,7 @@ const categories = [
   {
     id: "sandwich",
     name: "Sandwich",
-    image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=400&q=80",
+    image: "5.jpeg",
   },
   {
     id: "wraps",
