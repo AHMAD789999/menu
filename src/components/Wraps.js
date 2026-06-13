@@ -29,7 +29,7 @@ const menuData = [
     desc: "Pari Pari chicken, mixed vegetables served with special sauce in tortilla bread",
     price: "1.200",
     image:
-      "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80",
+      "6.jpeg",
   },
   {
     id: "04",
