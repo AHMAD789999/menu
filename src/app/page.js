@@ -29,7 +29,7 @@ const categories = [
   {
     id: "pasta",
     name: "Pasta",
-    image: "https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&w=400&q=80",
+    image: "22.jpeg",
   },
   {
     id: "rice",
