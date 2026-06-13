@@ -20,7 +20,7 @@ const menuData = [
     desc: "Teriyaki chicken, lettuce, cabbage served with special sauce in tortilla bread",
     price: "1.200",
     image:
-      "https://avatars.mds.yandex.net/i?id=8345371acdfed46b60c72273a5f88d821512b5b1-10268218-images-thumbs&n=13",
+      "8.jpeg",
   },
   {
     id: "03",
