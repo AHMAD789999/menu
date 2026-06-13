@@ -34,7 +34,7 @@ const menuData = [
     desc: "Tomato, onions, olives, capsicum, broccoli, mozzarella cheese, base pizza sauce, special sauce",
     price: "2.500",
     image:
-      "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=500&q=80",
+      "9.jpeg",
   },
   {
     id: "05",
