@@ -10,7 +10,7 @@ const menuData = [
     category: "Rice",
     desc: "chicken Strognoff served with white rice and grilled vegetables",
     price: "1.900",
-    image: "chicken strognoff.jpeg",
+    image: "1.jpeg",
   },
   {
     id: "02",
