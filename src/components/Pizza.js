@@ -26,7 +26,7 @@ const menuData = [
     desc: "Beef pepperoni, mozzarella cheese, base pizza sauce, special sauce topping",
     price: "2.800",
     image:
-      "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=500&q=80",
+      "3.jpeg",
   },
   {
     id: "04",
