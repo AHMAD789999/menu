@@ -34,7 +34,7 @@ const menuData = [
     desc: "Pasta, chicken, shrimp, vegetables, mozzarella cheese, your choice of sauce (white, red, mix)",
     price: "2.500",
     image:
-      "everything pasta.jpeg",
+      "22.jpeg",
   },
   {
     id: "05",
