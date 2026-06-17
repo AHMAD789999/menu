@@ -38,7 +38,7 @@ const menuData = [
     desc: "Chicken fajita, lettuce, capsicum with special sauce served in tortilla bread",
     price: "1.200",
     image:
-      "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=500&q=80",
+      "www.jpeg",
   },
 ];
 
