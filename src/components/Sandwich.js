@@ -20,7 +20,7 @@ const menuData = [
     desc: "chicken Teriyaki, cabbage, onion, cheddar cheese with special sauce",
     regular: "1.200",
     whole: "2.000",
-    image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=500&q=80",
+    image: "tcs.jpeg",
   },
   {
     id: "03",
