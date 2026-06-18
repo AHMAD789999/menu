@@ -42,7 +42,7 @@ const menuData = [
     desc: "Mozzarella cheese, base pizza sauce",
     price: "2.500",
     image:
-      "https://avatars.mds.yandex.net/i?id=f1c4b5336cb4abf1c3225a9f181a6448b09f8815-8178604-images-thumbs&n=13",
+      "pi.jpeg",
   },
   {
     id: "06",
