@@ -36,9 +36,20 @@ const Footer = () => {
               Turning your ideas into reality through high-performance digital solutions, creative branding, and results-driven marketing strategies.
             </p>
             <div className="flex gap-6 items-center">
-              {['FB', 'IG', 'LI', 'TW'].map((social) => (
-                <a key={social} href="#" className="text-[10px] font-black tracking-widest text-gray-600 hover:text-[#41BDB5] transition-all hover:-translate-y-1 cursor-pointer">
-                  {social}
+              {[
+                { name: 'FB', url: 'https://facebook.com' },
+                { name: 'IG', url: 'https://instagram.com' },
+                { name: 'LI', url: 'https://linkedin.com' },
+                { name: 'TW', url: 'https://twitter.com' }
+              ].map((social) => (
+                <a 
+                  key={social.name} 
+                  href={social.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-[10px] font-black tracking-widest text-gray-600 hover:text-[#41BDB5] transition-all hover:-translate-y-1 cursor-pointer"
+                >
+                  {social.name}
                 </a>
               ))}
             </div>
@@ -89,7 +100,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Contact Column (Updated) */}
+            {/* Contact Column */}
             <div className="space-y-6">
               <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-white/30 italic">Get in Touch</h4>
               <div className="space-y-5">
@@ -97,11 +108,10 @@ const Footer = () => {
                   <p className="text-[9px] font-black uppercase tracking-widest text-gray-600 mb-1">Email Us</p>
                   <p className="text-xs font-black text-white group-hover:text-[#41BDB5] transition-colors italic">{officialEmail}</p>
                 </a>
-                <a href={`tel:${whatsappNumber}`} className="block group cursor-pointer">
+                <a href={`https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}`} target="_blank" rel="noopener noreferrer" className="block group cursor-pointer">
                   <p className="text-[9px] font-black uppercase tracking-widest text-gray-600 mb-1">Call / WhatsApp</p>
                   <p className="text-xs font-black text-white group-hover:text-[#41BDB5] transition-colors">{whatsappNumber}</p>
                 </a>
-               
               </div>
             </div>
 
@@ -116,8 +126,7 @@ const Footer = () => {
                © 2026 Growvix Digital Agency. All rights reserved.
              </p>
           </div>
-          
-       
+         
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="group flex items-center gap-3 px-8 py-3 rounded-full border border-white/5 bg-white/[0.02] backdrop-blur-md text-[10px] font-black uppercase tracking-[0.2em] hover:border-[#41BDB5]/40 transition-all hover:bg-white/[0.05]"
