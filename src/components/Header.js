@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown } from "lucide-react"; // Dropdown arrow ke liye
+import { ChevronDown } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,12 +46,12 @@ const Header = () => {
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            <button className="flex items-center gap-1 text-gray-400 group-hover:text-[#41BDB5] transition-all text-[11px] uppercase font-black tracking-widest">
+            <button className="flex items-center gap-1 text-gray-400 group-hover:text-[#41BDB5] transition-all text-[11px] uppercase font-black tracking-widest py-2">
               Services <ChevronDown size={14} className={`transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
             
             {/* Dropdown Menu */}
-            <div className={`absolute top-full left-0 mt-4 w-64 bg-[#0a0a0a] border border-white/10 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 ${isDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
+            <div className={`absolute top-full left-0 mt-2 w-64 bg-[#0a0a0a] border border-white/10 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 ${isDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
               <div className="py-2">
                 {serviceLinks.map((service) => (
                   <Link 
@@ -73,6 +73,7 @@ const Header = () => {
         <a 
           href={`https://wa.me/${whatsappNumber}`}
           target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:flex items-center gap-4 bg-white/5 border border-white/10 pl-1.5 pr-6 py-1.5 rounded-full group hover:border-[#41BDB5]/50 transition-all"
         >
           <div className="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-500 group-hover:bg-white" style={{ backgroundColor: brandColor }}>
@@ -92,23 +93,23 @@ const Header = () => {
 
       {/* --- Mobile Menu --- */}
       <div className={`fixed inset-0 bg-[#0a0a0a] z-[100] flex flex-col items-center justify-center transition-all duration-500 ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
-        <button className="absolute top-10 right-10 text-white" onClick={() => setIsOpen(false)}>
+        <button className="absolute top-10 right-10 text-white p-2" onClick={() => setIsOpen(false)}>
           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
 
-        <div className="flex flex-col items-center gap-6">
-          <Link href="/" onClick={() => setIsOpen(false)} className="text-3xl font-black text-white uppercase italic">Home</Link>
-          <Link href="/about" onClick={() => setIsOpen(false)} className="text-3xl font-black text-white uppercase italic">About</Link>
+        <div className="flex flex-col items-center gap-6 text-center max-h-[85vh] overflow-y-auto px-6 py-4">
+          <Link href="/" onClick={() => setIsOpen(false)} className="text-2xl sm:text-3xl font-black text-white uppercase italic">Home</Link>
+          <Link href="/about" onClick={() => setIsOpen(false)} className="text-2xl sm:text-3xl font-black text-white uppercase italic">About</Link>
           
-          <div className="flex flex-col items-center gap-3 bg-white/5 p-6 rounded-3xl">
+          <div className="flex flex-col items-center gap-3 bg-white/5 p-6 rounded-3xl w-full max-w-xs border border-white/10">
             <span className="text-[#41BDB5] text-[10px] font-black uppercase tracking-widest">Our Services</span>
             {serviceLinks.map(s => (
-              <Link key={s.name} href={s.href} onClick={() => setIsOpen(false)} className="text-xl font-bold text-gray-400 hover:text-white uppercase">{s.name}</Link>
+              <Link key={s.name} href={s.href} onClick={() => setIsOpen(false)} className="text-base sm:text-lg font-bold text-gray-400 hover:text-white uppercase transition-colors">{s.name}</Link>
             ))}
           </div>
 
-          <Link href="/contact" onClick={() => setIsOpen(false)} className="text-3xl font-black text-white uppercase italic">Contact</Link>
-          <a href={`https://wa.me/${whatsappNumber}`} className="mt-6 py-4 px-10 rounded-full border-2 border-[#41BDB5] text-[#41BDB5] font-black uppercase">WhatsApp Us</a>
+          <Link href="/contact" onClick={() => setIsOpen(false)} className="text-2xl sm:text-3xl font-black text-white uppercase italic">Contact</Link>
+          <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="mt-4 py-4 px-10 rounded-full border-2 border-[#41BDB5] text-[#41BDB5] font-black uppercase text-xs tracking-widest hover:bg-[#41BDB5] hover:text-black transition-all">WhatsApp Us</a>
         </div>
       </div>
     </header>
