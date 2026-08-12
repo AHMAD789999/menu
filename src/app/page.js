@@ -143,7 +143,8 @@ export default function FreshSourceLanding() {
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute inset-0 bg-black/70" />
+          {/* Increased background overlay opacity to bg-black/85 for high contrast */}
+          <div className="absolute inset-0 bg-black/85" />
         </div>
 
         {/* HERO CONTENT */}
@@ -182,7 +183,7 @@ export default function FreshSourceLanding() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
-            className="mt-5 max-w-xl mx-auto text-xs md:text-sm leading-relaxed text-white/70 font-normal"
+            className="mt-5 max-w-xl mx-auto text-xs md:text-sm leading-relaxed text-white/90 font-normal"
           >
             Welcome to Fresh Source Restaurant, where we serve transparent,
             real food at the speed of your life. Our menu features vibrant,
@@ -195,7 +196,7 @@ export default function FreshSourceLanding() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="mt-3 text-xs md:text-sm font-medium tracking-wide text-[#cbd5e1]"
+            className="mt-3 text-xs md:text-sm font-medium tracking-wide text-white"
           >
             🕒 Timing: 11:00 AM to 2:00 AM
           </motion.p>
@@ -278,7 +279,8 @@ export default function FreshSourceLanding() {
                     >
                       {item.name}
                     </h3>
-                    <p className="text-[11px] text-gray-400 mt-1">
+                    {/* Increased text size and set font color to full black */}
+                    <p className="text-sm font-semibold text-black mt-1.5">
                       Fresh & delicious meals
                     </p>
                   </div>
@@ -336,8 +338,6 @@ export default function FreshSourceLanding() {
               🕒 Open Daily: 11:00 AM to 2:00 AM
             </div>
           </div>
-
-       
 
           <div className="mt-8 border-t border-white/10 pt-5 text-[11px] text-white/60 tracking-wider">
             © 2026 Fresh Source Restaurant. All rights reserved.
